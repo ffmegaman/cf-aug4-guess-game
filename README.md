@@ -1,7 +1,7 @@
-cf-aug3
+cf-aug4
 =======
 
-Repo for my guessing game project, afternoon of Monday 8/3
+Repo for my guessing game project, afternoon of Monday 8/4
 
 This is a simple game, modeled off the pizza topping game we did in class this morning. I added in a "select from 7 different options" feature by giving numerical choices in the alert, and then capturing those choices in the prompt.
 
