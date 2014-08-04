@@ -1,0 +1,27 @@
+<script>
+
+var guess;
+var favorite = "4";
+var	response;
+var wrongGuess = ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"]
+
+guess = prompt("In this guessing game, you will try to guess my favorite continent. \
+	Which continent do you think is my favorite? Answer with the number of your guess: \
+	1. Africa \
+	2. Antarctica \
+	3. Asia \
+	4. Australia \
+	5. Europe \
+	6. North America \
+	7. South America");
+
+if (guess===favorite) {
+	response = "Yes! My favorite continent is indeed Australia. Even if I've never been there.";
+}
+
+else {
+	response = "No, my favorite continent is not " + wrongGuess[guess-1] + ". It is Australia, even though I have never been there.";
+};
+
+alert(response);
+</script>
