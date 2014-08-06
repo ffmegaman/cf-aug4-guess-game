@@ -2,26 +2,59 @@
 
 var guess;
 var favorite = "4";
+var favorite2 = "2";
 var	response;
 var wrongGuess = ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"]
+var wrongGuess2 = ["Koala", "Kangaroo", "Steve Irwin", "Great Wite Shark", "Nicole Kidman", "Shrimp on the barbie"]
 
-guess = prompt("In this guessing game, you will try to guess my favorite continent. \
-	Which continent do you think is my favorite? Answer with the number of your guess: \
-	1. Africa \
-	2. Antarctica \
-	3. Asia \
-	4. Australia \
-	5. Europe \
-	6. North America \
-	7. South America");
+while (loopAgain = true) {
 
-if (guess===favorite) {
-	response = "Yes! My favorite continent is indeed Australia. Even if I've never been there.";
+	guess = prompt("In this guessing game, you will try to guess my favorite continent. \
+		Which continent do you think is my favorite? Answer with the number of your guess: \
+		1. Africa \
+		2. Antarctica \
+		3. Asia \
+		4. Australia \
+		5. Europe \
+		6. North America \
+		7. South America");
+
+	if (guess===favorite) {
+		loopAgain = false;
+		response = "Yes! My favorite continent is indeed Australia. Even if I've never been there.";
+		break;
+	}
+
+	else {
+		response = "No, my favorite continent is not " + wrongGuess[guess-1] +". Try again.";
+	};
+
+	alert(response);
 }
 
-else {
-	response = "No, my favorite continent is not " + wrongGuess[guess-1] + ". It is Australia, even though I have never been there.";
-};
+while (loopAgain = true) {
 
-alert(response);
+	guess = prompt("Congratulations, welcome to the next level! What is my favorite Australian animal? \
+		1. Koala \
+		2. Kangaroo \
+		3. Steve Irwin \
+		4. Great White Shark \
+		5. Nicole Kidman \
+		6. Shrimp on the barbie");
+
+	if (guess===favorite2) {
+		loopAgain = false;
+		response = "Yes! My favorite Australian animal is indeed Kangaroo. Even if I've never been there.";
+		break;
+	}
+
+	else {
+		response = "No, my favorite Australian animal is not " + wrongGuess2[guess-1] +". Try again.";
+	};
+
+	alert(response);
+}
+
+alert("Congratulations! You have completed all 2 levels!")
+
 </script>

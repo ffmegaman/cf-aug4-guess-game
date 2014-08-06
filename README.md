@@ -1,5 +1,7 @@
-cf-aug4
+cf-aug4 V.2
 =======
+
+####V.1
 
 Repo for my guessing game project, afternoon of Monday 8/4
 
@@ -10,3 +12,10 @@ I ran into two problems:
 1. An error by including a hard return inside of a string. I finally went to Brook for help, and the inclusion of backslashes before the hard returns fixed that problem.
 
 2. Even though I was taking in integers from the prompt, JS was treating the values as strings. That meant using === in the if condition returned false, whereas using == returned true. I solved this by setting the numerical comparator into a string.
+
+
+####V.2
+
+1. Add a second level question to the game.
+
+2. Add ending congratulatory message.
